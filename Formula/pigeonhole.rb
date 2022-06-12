@@ -5,11 +5,11 @@
 class Pigeonhole < Formula
   desc "Software to create fast and easy drum rolls."
   homepage "https://pigeono.io/"
-  version "0.1.15"
+  version "0.1.24"
 
   on_macos do
-    url "https://releases.pigeono.io/cli/0.1.15/pigeonhole_0.1.15_darwin_amd64.tar.gz", :using => CurlDownloadStrategy
-    sha256 "099e0d3a4d0d11831c3965f038f6e6a3f2a1fef1cd7df8bcca0ca4ef09d955b7"
+    url "https://releases.pigeono.io/cli/0.1.24/pigeonhole_0.1.24_darwin_amd64.tar.gz", :using => CurlDownloadStrategy
+    sha256 "75d35a164172d25e759d4fa883efbc37dc54b62eaa860a9188a728d8170f1ea5"
 
     def install
       bin.install "pigeonhole"
@@ -28,8 +28,8 @@ class Pigeonhole < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://releases.pigeono.io/cli/0.1.15/pigeonhole_0.1.15_linux_amd64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "6c3c666b6c58425d26ef260f9fe7a9d494feb6628b89a08e4a658ce943ffbb80"
+      url "https://releases.pigeono.io/cli/0.1.24/pigeonhole_0.1.24_linux_amd64.tar.gz", :using => CurlDownloadStrategy
+      sha256 "bf616ab4eb8b35e961329c51645a1132cff26529603bf9e6be4049bc6eabb810"
 
       def install
         bin.install "pigeonhole"
